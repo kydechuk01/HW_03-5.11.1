@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    height: 7em;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    background-color: darkgray;
+    background-image: url('../images/4383-galaxy-1920x1080-space-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    margin: 1em 0.2em 2em;
+    padding: 0.2em;
+}
+
+footer {
+    background-color: #2b2c41;
+    width: 100%;
+    margin-left: 0em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.links {
+    padding: 0;
+    /* border-top: silver 1px solid; */
+    margin-bottom: 1em;
+    text-transform: lowercase;
+}
+
+footer .links>a {
+    color: silver;
+    margin: 0em 0.3em;
+    letter-spacing: -0.05em;
+    font-size: larger;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer .links>a:hover {
+    color: rgb(108, 222, 15);
+    text-decoration: underline;
+}
+
+.footer_copyright {
+    padding-left: 0.5em;
+    color: gray;
+    font-size: small;
+    font-weight: lighter;
+}
+
+footer .footer_copyright>a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer .footer_copyright>a:hover {
+    color: rgb(13, 188, 3);
+    text-decoration: underline;
+}
+
+.news {
+    max-width: 80%;
+    background-color: #fff;
+    color: black;
+    padding: 0.4em 0.6em 1em;
+    margin: 0.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.news-img-container {
+    max-width: 100%;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: left;
+    margin: 0.4em 0
+}
+
+.news-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.news:nth-of-type(2n) {
+    background-color: rgb(251, 220, 244);
+}
+
+.news:nth-of-type(-n+2) h2::after {
+    content: " 🆕";
+}
+
+
+article .news-short {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+article h2 {
+    margin: 0.2em 0 0.4em;
+    padding: 0;
+}
+
+.article-meta {
+    font-size: smaller;
+
+    margin: 0;
+    color: gray;
+}
+
+article a {
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
